@@ -1,0 +1,24 @@
+<!--pages/index/index.wxml-->
+<!-- 展示轮播图 -->
+<f-swiper list="{{banners}}"/>
+<!-- 展示推荐数据的展示 -->
+<view class="rec">
+  <view wx:for="{{recommends}}" wx:key="sort" class="rec-item">
+    <image src="{{item.image}}"></image>
+    <text>{{item.title}}</text>
+  </view>
+</view>
+<!-- 展示本周流行 -->
+<image src="../../assets/home/recommend_bg.jpg" mode="widthFix" class="wpop"></image>
+
+<!-- ctrol -->
+<view class="tab-crol"><f-ctrol titles="{{tabControl}}" bind:itemclick="itemclick"/></view>
+
+<!-- 商品数据的展示 -->
+<view class="goods">
+  <block wx:for="{{goods[currentType].list}}" wx:key="iid">
+    <f-goods class="goods-item" item="{{item}}" />
+  </block>
+</view>
+<!-- 回到顶部按钮 -->
+<f-backtop wx:if="{{isBackTop}}"/>

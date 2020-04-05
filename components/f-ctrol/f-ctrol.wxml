@@ -1,0 +1,7 @@
+<view class="ctrol">
+  <block wx:for="{{titles}}" wx:key="index" class="ctrol-item">
+    <view class="ctrol-item {{currentIndex == index ? 'active': ''}}"  bind:tap="itemclick" data-index="{{index}}">
+    <text class="{{currentIndex == index ? 'ctrol-text': ''}}">{{item}}</text>
+    </view>
+  </block>
+</view>

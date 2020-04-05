@@ -1,0 +1,230 @@
+/* pages/detail/detail.wxss */
+page {
+  /* padding-bottom的值要等于设置position: fixed设置的高度 */
+  padding-bottom: 90rpx;
+}
+/* 轮播样式 */
+.swiper {
+  height: 390rpx;
+  width: 750rpx;
+}
+.img {
+  width: 100%;
+}
+
+/* 商品样式 */
+.g-title {
+  margin-top: 20rpx;
+}
+.newprice {
+  font-size: 50rpx;
+  color: #ff5777;
+}
+.oldprice {
+  font-size: 30rpx;
+  text-decoration: line-through;
+  color: #999;
+}
+.info {
+  font-size: 26rpx;
+  margin: 0 50rpx;
+  color: #999;
+}
+.zw {
+  margin-top: 10rpx;
+  border-bottom: 1px solid rgba(100,100,100,.1);
+}
+.s-icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+
+.dianpu{
+  border-top: 10rpx solid #999;
+  margin-top: 30rpx;
+  line-height: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  border: 3rpx solid #999;
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 30rpx 15rpx;
+}
+.b-goods {
+  display: flex;
+}
+.b-left {
+  flex: 1;
+  display: flex;
+  text-align: center;
+  margin-right: 100rpx;
+}
+.fz {
+  font-size: 30rpx;
+}
+.b-right {
+  flex: 1;
+  font-size: 25rpx;
+}
+.scro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.gg {
+  text-align: center;
+  padding: 30rpx 0;
+  border-bottom: 10rpx solid #999;
+}
+.ggg {
+  border: 3rpx solid #999;
+  padding: 0 50rpx;
+  border-radius: 10rpx;
+}
+
+/* 图片详情样式 */
+.clear-fix::after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.info-desc {
+  padding: 0 30rpx;
+}
+.stat, .end {
+  width: 180rpx;
+  height: 2rpx;
+  background-color: #a3a3a5;
+  position: relative;
+}
+.stat {
+  float: left;
+}
+.end {
+  float: right;
+}
+.stat::before, .end::after {
+  content: '';
+    position: absolute;
+    width: 10rpx;
+    height: 10rpx;
+    background-color: #333;
+    bottom: 0;
+}
+.desc {
+  padding: 30rpx 0;
+  font-size: 28rpx;
+}
+.key {
+  margin: 20rox 0 20rpx 60rpx;
+  font-size: 28rpx;
+}
+.detaiimg{
+  width: 100%;
+}
+.backtop {
+  margin: 500rpx;
+}
+/* 底部样式 */
+/* .bottom {
+  border-top: 1rpx solid #ccc;
+  position: fixed;
+  height: 98rpx;
+  display: flex;
+  text-align: center;
+  background-color: #fff;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.bottom-left {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  font-size: 26rpx;
+}
+.btn {
+  display: inline-block;
+  width: 20rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.iconfont {
+  font-size: 40rpx;
+}
+.bottom-right{
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  line-height: 98rpx;
+}
+.cart {
+  background-color: #ffe817;
+  flex: 1;
+  color: #333;
+}
+.buy {
+  background-color: #ff5777;
+  flex: 1;
+  color: #fff;
+} */
+
+/* 别人写的 */
+.bottom {
+  border-top: 1rpx solid #ccc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color:#fff;
+  display: flex;
+}
+.bottom .bottom-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  position: relative;
+}
+.btn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.bottom .cart {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600rpx;
+}
+.bottom .buy {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff5777;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600rpx;
+}

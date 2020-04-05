@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "f-swiper": "../components/f-swiper/f-swiper",
+    "f-ctrol": "../components/f-ctrol/f-ctrol",
+    "f-goods": "../components/f-goods/f-goods",
+    "f-backtop": "../../components/f-backTop/f-backtop"
+  },
+  "navigationBarTitleText": "首页"
+}

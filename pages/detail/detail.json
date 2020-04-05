@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "f-ctrol": "../components/f-ctrol/f-ctrol",
+    "f-backtop": "../../components/f-backTop/f-backtop"
+  },
+  "navigationBarTitleText": "商品详情"
+}

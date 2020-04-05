@@ -1,0 +1,118 @@
+<!-- tabctrl -->
+<view class="detai-crol"><f-ctrol titles="{{tabControl}}" bind:itemclick="itemclick"/></view>
+<!-- 商品轮播图 -->
+<swiper class="swiper" autoplay indicator-dots circular interval="2000">
+    <swiper-item wx:for="{{topImg}}" wx:key="index">
+     <navigator>
+       <image src="{{item}}" mode="aspectFill" class="img"></image>     
+     </navigator>
+    </swiper-item>
+</swiper>
+<!-- 商品描述 -->
+<view class="goods">
+  <view class="g-title">{{title}}</view>
+  <view class="price">
+    <text class="newprice">￥{{newprice}}</text>
+    <text class="oldprice">{{oldprice}}</text>
+  </view>
+  <block wx:for="{{columns}}" wx:key="index">
+    <text class="info">{{item}}</text>
+  </block>
+  <view class="zw"></view>
+  <view>
+    <block wx:for="{{services}}" wx:key="index">
+      <image class="s-icon" src="{{item.icon}}"></image>
+      <text class="s-info">{{item.name}}</text>
+    </block>
+  </view> 
+  <view class="dianpu">
+    <image src="{{shopLogo}}" class="logo"></image>
+    <text class="l-name">{{name}}</text>
+  </view>
+  <view class="b-goods">
+    <view class="b-left">
+      <view class="g-info">
+        <view>{{cSells}}件</view>
+        <view class="fz">总销量</view>
+      </view>
+      <view>
+        <view>{{cGoods}}</view>
+        <view class="fz">全部宝贝</view>
+      </view>
+    </view>
+    <view class="b-right">
+      <block wx:for="{{score}}" wx:key="name">
+        <view class="scro">
+         <view>{{item.name}}</view>
+         <view>{{item.score}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="gg"><text class="ggg">进店逛逛</text></view>
+</view>
+<view class="clear-fix info-desc">
+  <view class="star"></view>
+  <view class="desc">{{desc}}</view>
+  <view class="end"></view>
+</view>
+
+<!-- 商品详情 -->
+<view>
+  <block wx:for="{{detaiimg}}" wx:key="index">
+    <text class="key">{{item.key}}</text>
+    <block wx:for="{{item.list}}" wx:key="index"> 
+      <image class="detaiimg" src="{{item}}" mode="widthFix"></image>
+    </block>
+  </block>
+</view>
+<!-- 回到顶部 -->
+<f-backtop wx:if="{{isBackTop}}"/>
+
+<!-- 底部导航栏 -->
+<!-- <view class="bottom">
+  <view class="bottom-left">
+    <view class="left-one"> 
+      <view class="iconfont icon-fuwupingjia-kefu"></view>
+      <view>客服</view>
+      <button open-type="contact" class="btn"></button>
+    </view>
+    <view class="left-two">
+      <view class="iconfont icon-fenxiang"></view>
+      <view>分享</view> -->
+      <!-- <button open-type="share" class="btn"></button> -->
+    <!-- </view>
+    <navigator url="/pages/cart/cart" open-type="switchTab">
+      <view class="left-three">
+      <view class="iconfont icon-qicheqianlian-1"></view>
+      <view>购物车</view>
+      </view> 
+    </navigator>
+  </view>
+  <view class="bottom-right">
+    <view class="cart" bind:tap="cartClick">加入购物车</view>
+    <view class="buy">购买</view>
+  </view>
+</view>   -->
+<view class="bottom">
+  <view class="bottom-item">
+    <view class="iconfont icon-fuwupingjia-kefu"></view>
+    <view>客服</view>
+    <button open-type="contact" class="btn"></button>
+  </view>
+  <view class="bottom-item">
+    <view class="iconfont icon-fenxiang"></view>
+    <view>分享</view>
+    <button open-type="share" class="btn"></button>
+  </view>
+  <navigator url="/pages/cart/cart" open-type="switchTab" class="bottom-item">
+    <view class="iconfont icon-qicheqianlian-1"></view>
+    <view>购物车</view>
+  </navigator>
+  <view class="bottom-item cart" bind:tap="cartClick">
+    加入购物车
+  </view>
+  <view class="bottom-item buy">
+    立即购买
+  </view>
+</view>

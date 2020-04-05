@@ -1,0 +1,18 @@
+.bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+}
+.bottom bottom-item {
+  flex: 1;
+}
+.bottom cart {
+  flex: 2;
+}
+.bottom buy {
+  flex: 2;
+}

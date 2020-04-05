@@ -1,0 +1,13 @@
+<navigator class="goods-item" url="/pages/detail/detail?iid={{item.iid}}">
+  <!-- 左边图片 -->
+  <view class="goods-img">
+    <image class="img" src="{{item.show.img}}" mode="widthFix"></image>
+  </view>
+  <!-- 右边内容 -->
+  <view class="goods-info">
+    <view class="title">{{item.title}}</view>
+    <view class="price">￥{{item.price}}</view>
+    <image class="icon" src="/assets/common/favor.png"></image>
+    <view class="cfav">{{item.cfav}}人收藏</view>
+    </view>
+</navigator>

@@ -1,0 +1,16 @@
+.ctrol {
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.ctrol-item {
+  flex: 1;
+  text-align: center;
+}
+.active {
+  color: red;
+}
+.ctrol-text {
+  padding: 10rpx 10rpx ;
+  border-bottom: 5rpx solid #ff5777;
+}
