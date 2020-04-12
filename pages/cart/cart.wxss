@@ -1,1 +1,128 @@
 /* pages/cart/cart.wxss */
+page {
+  padding-bottom: 90rpx;
+}
+/* 收货地址 */
+.address .add-btn {
+    padding: 20rpx;
+  }
+  .address .add-btn button {
+    width: 60%;
+  }
+  .address .user {
+    display: flex;
+    padding: 20rpx;
+    font-size: 28rpx;
+  }
+  .address .user .user-info {
+    flex: 5;
+  }
+  .address .user .user-phone {
+    flex: 3;
+    text-align: right;
+  }
+  .cart .cart-title {
+    padding: 20rpx;
+    font-size: 36rpx;
+    color: #ff5777;
+    border-top: 1rpx solid currentColor;
+    border-bottom: 1rpx solid currentColor;
+  }
+  .cart .cart-main .cart-item {
+    display: flex;
+    padding: 10rpx;
+    border-bottom: 1rpx solid #ccc;
+  }
+  .cart .cart-main .cart-chk {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart .cart-main navigator.cart-img {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart .cart-main navigator.cart-img image {
+    width: 80%;
+  }
+  .cart .cart-main .cart-info {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .cart .cart-main .cart-info .goods-name {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: #666;
+  }
+  .cart .cart-main .cart-info .goods-price {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart .cart-main .cart-info .goods-price .goods-newprice {
+    color: #ff5777;
+    font-size: 34rpx;
+  }
+  .cart .cart-main .cart-info .goods-price .cart-num {
+    display: flex;
+  }
+  .cart .cart-main .cart-info .goods-price .cart-num .num- {
+    width: 55rpx;
+    height: 55rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1rpx solid #ccc;
+  }
+  .cart .cart-main .cart-info .goods-price .cart-num .num {
+    width: 55rpx;
+    height: 55rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 底部 */
+  .bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90rpx;
+    background-color: #fff;
+    display: flex;
+    border-top: 1rpx solid #ccc;
+  }
+  .bottom .all-chk {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom .all-price {
+    flex: 5;
+    padding-left: 15rpx;
+    text-align: center;
+  }
+  .bottom .all-price .total-price text.total-text {
+    caret-color: #ff5777;
+    font-size: 34rpx;
+    font-weight: 600;
+  }
+  .bottom .pay {
+    flex: 3;
+    background-color: #ff5777;
+    font-size: 32rpx;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  

@@ -1,2 +1,66 @@
-<!--pages/cart/cart.wxml-->
-<text>pages/cart/cart.wxml</text>
+<!-- 收货地址 -->
+<view class="address">
+  <!-- 当收货地址不存在按钮就显示 -->
+  <view class="add-btn" wx:if="{{!Receiving.userName}}">
+    <button bind:tap="btnclick" type="primary"  plain>获取收货地址</button>
+  </view>
+  <!-- 收货地址存在 就全部显示 -->
+  <view wx:else class="user">
+    <view class="user-info">
+      <view>{{Receiving.userName}}</view>
+      <view>{{Receiving.provinceName+Receiving.cityName+Receiving.countyName+Receiving.detailInfo}}</view>
+    </view>
+    <view class="user-phone">{{Receiving.telNumber}}</view>
+  </view>
+</view>
+
+<!-- 购物车内容 -->
+<view class="cart">
+  <view class="cart-title">购物车</view>
+  <view class="cart-main">
+    <view class="cart-item" wx:for="{{cart}}" wx:key="{{}}"></view>
+    <!-- 复选框 -->
+    <view class="cart-chk">
+      <checkbox-group>
+       <checkbox></checkbox>
+      </checkbox-group>
+    </view>
+    <!-- 商品图片 -->
+    <navigator class="cart-img">
+      <image src="{{item.data.result.itemInfo.topImages[0]}}" mode="widFix"></image>
+    </navigator>
+    <!-- 商品信息 -->
+    <view class="cart-info">
+      <view class="goods-name"></view>
+      <view class="goods-price">
+        <view class="goods-newprice"></view>
+        <view class="cart-num">
+          <view class="num-">-</view>
+          <view class="num">1</view>
+          <view class="num+">+</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 底部 -->
+<view class="bottom">
+  <!-- 全选 -->
+  <view class="all-chk">
+    <checkbox-group>
+      <checkbox>全选</checkbox>
+    </checkbox-group>
+  </view>
+  <!-- 总价格 -->
+  <view class="all-price">
+    <view class="total-price">
+      合计:<text class="total-text">￥999</text>
+    </view>
+    <view>包含运费</view>
+  </view>
+  <!-- 结算 -->
+  <view class="pay">
+    结算(2)
+  </view>
+</view>

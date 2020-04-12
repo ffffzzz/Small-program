@@ -1,0 +1,146 @@
+.address {
+    .add-btn {
+        padding: 20rpx;
+        button {
+            width: 60%;
+        }
+    }
+    .user {
+        display: flex;
+        padding: 20rpx;
+        .user-info {
+            flex: 5;
+        }
+        .user-phone{
+            flex: 3;
+            text-align: right;
+        }
+    }
+}
+
+.cart {
+  .cart-title {
+    padding: 20rpx;
+    font-size: 36rpx;
+    color: #ff5777;
+    border-top: 1rpx solid currentColor;
+    border-bottom: 1rpx solid currentColor;
+  }
+
+  .cart-main {
+    .cart-item {
+        display: flex;
+        padding: 10rpx;
+        border-bottom: 1rpx solid #ccc;
+    }
+
+
+    .cart-chk {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      checkbox-group {
+        checkbox {
+
+        }
+      }
+    }
+
+    navigator.cart-img {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      image {
+        width: 80%;
+      }
+    }
+
+    .cart-info {
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      .goods-name {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        color: #666;
+      }
+
+      .goods-price {
+          display: flex;
+          justify-content: space-between;
+        .goods-newprice {
+            color: #ff5777;
+            font-size: 34rpx;
+        }
+
+        .cart-num {
+            display: flex;
+          .num- {
+            width: 55rpx;
+            height: 55rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1rpx solid #ccc;
+          }
+
+          .num {
+            width: 55rpx;
+            height: 55rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .num+ {
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+  border-top: 1rpx solid #ccc;
+    .all-chk {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .all-price {
+        flex: 5;
+        padding-left: 15rpx;
+        text-align: center;
+      .total-price {
+        text.total-text {
+            caret-color: #ff5777;
+            font-size: 34rpx;
+            font-weight: 600;
+        }
+     }
+    }
+    .pay {
+        flex: 3;
+        background-color: #ff5777;
+        font-size: 32rpx;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
